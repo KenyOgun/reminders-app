@@ -1,5 +1,14 @@
 function InputForm(props) {
-  return <div>Input form here</div>;
+  return (
+    <form>
+      <input
+        id="reminderText"
+        type="text"
+        placeholder="What do you want to do?"
+      />
+      <input id="dueDate" type="date" />
+      <button>Add item</button>
+    </form>
+  );
 }
-
 export default InputForm;
