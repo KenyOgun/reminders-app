@@ -2,11 +2,12 @@ function InputForm(props) {
   return (
     <form>
       <input
+        value={props.userInput.reminderText}
         id="reminderText"
         type="text"
         placeholder="What do you want to do?"
       />
-      <input id="dueDate" type="date" />
+      <input value={props.userInput.dueDate} id="dueDate" type="date" />
       <button>Add item</button>
     </form>
   );
